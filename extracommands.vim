@@ -2,7 +2,7 @@ set hls
 let g:RevealWhitespace = 1
 function ToggleVisibleWhitespace()
   if g:RevealWhitespace
-    set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
+    set listchars=eol:¬,tab:→.,trail:~,extends:>,precedes:<
     set list
   else
     set nolist

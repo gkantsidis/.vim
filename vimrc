@@ -19,3 +19,4 @@ source ~/vimfiles/commands.vim
 source ~/vimfiles/autocommands.vim
 source ~/vimfiles/mappings.vim
 source ~/vimfiles/tool_config.vim
+source ~/vimfiles/extracommands.vim

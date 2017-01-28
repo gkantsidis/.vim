@@ -25,3 +25,4 @@ source $VIMHOME/autocommands.vim
 source $VIMHOME/mappings.vim
 source $VIMHOME/tool_config.vim
 source $VIMHOME/extracommands.vim
+source $VIMHOME/templates.vim

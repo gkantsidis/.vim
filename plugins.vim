@@ -1,4 +1,5 @@
-
+" For collections of interesting plugins see:
+"   - http://vimawesome.com
 
 " Included plugins
 runtime! ftplugin/man.vim " man pages
@@ -39,6 +40,7 @@ Plug 'mattn/emmet-vim'
 " Languages
 Plug 'dpwright/vim-tup'
 Plug 'sheerun/vim-polyglot'
+Plug 'valloric/youcompleteme'
 
 " Integration
 Plug 'tpope/vim-fugitive'

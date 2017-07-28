@@ -26,3 +26,7 @@ source $VIMHOME/mappings.vim
 source $VIMHOME/tool_config.vim
 source $VIMHOME/extracommands.vim
 source $VIMHOME/templates.vim
+
+if filereadable($VIMHOME."/localcommands.vim")
+  source $VIMHOME/localcommands.vim
+endif

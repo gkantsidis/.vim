@@ -5,3 +5,4 @@ undo/*
 plugged
 autoload/plug.vim.old
 .viminfo
+localcommands.vim

@@ -1,0 +1,6 @@
+" Example of localcommands.vim file
+" To add your own customizations of vim which are not checked-in the repo,
+" copy the file to the parent directory and remove the _sample extension.
+
+" Example for settings the path of the python libraries:
+set pythonthreedll=c:\Python36\python36.dll

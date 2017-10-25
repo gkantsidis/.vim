@@ -33,8 +33,8 @@ Plug 'MarcWeber/vim-addon-mw-utils' " for snipmate --- interpret a file by funct
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'          " code snippet <tab> completion
 Plug 'dkprice/vim-easygrep'
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'itchyny/lightline.vim' | Plug 'w0rp/ale'  " visual line (requires syntastic for error/warning detection)
 "Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 " Plug 'jiangmiao/auto-pairs'
@@ -54,7 +54,8 @@ Plug 'chrisbra/vim-diff-enhanced'   " pretty vim -d (diff)
 "Plug 'csexton/jekyll.vim'
 
 " Tools
-" Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }   " open filesystem browser (on demand loading) 
+Plug 'jistr/vim-nerdtree-tabs', { 'on':  'NERDTreeTabsToggle' }
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }    " display list of functions, variables etc.
 Plug 'gregsexton/gitv'
 Plug 'sjl/gundo.vim'
@@ -73,5 +74,30 @@ if !(has('win32') || has ('win64'))
   " cscope only for Linux / Mac
   Plug 'brookhong/cscope.vim'
 endif
+
+" language-specific
+Plug 'editorconfig/editorconfig-vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
+
+Plug 'lilydjwg/colorizer',  { 'for' : 'CSS' }
+Plug '2072/PHP-Indenting-for-VIm', { 'for': 'PHP' }
+Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
+Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
+
+Plug 'vim-latex/vim-latex', { 'for': ['tex', 'latex', 'plaintext'] }
+Plug 'chrisbra/csv.vim', { 'for': 'csv' }
+Plug 'raichoo/smt-vim'
+Plug 'tomlion/vim-solidity'
+
+
+" Java-specific -- really slow!
+" Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+" Plug 'tfnico/vim-gradle', { 'for': 'java' }
+" Plug 'tpope/vim-classpath', { 'for': 'java' }
+
+" Load colorschemes
+let colorschemes=expand(g:vimroot . "/colorschemes")
+Plug colorschemes
 
 call plug#end()

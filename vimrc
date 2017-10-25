@@ -17,8 +17,12 @@ if has('win32') || has ('win64')
 else
   let $VIMHOME = $HOME."/.vim"
 endif
+let g:vimroot=expand($HOME . "/.vim")
 
 source $VIMHOME/plugins.vim
+source $VIMHOME/config/default.vim
+source $VIMHOME/config/plugins.vim
+source $VIMHOME/config/misc.vim
 source $VIMHOME/settings.vim
 source $VIMHOME/commands.vim
 source $VIMHOME/autocommands.vim
@@ -30,3 +34,6 @@ source $VIMHOME/templates.vim
 if filereadable($VIMHOME."/localcommands.vim")
   source $VIMHOME/localcommands.vim
 endif
+
+let user_config = expand($VIMHOME . "/config/user.vim")
+execute "source ".fnameescape(user_config)

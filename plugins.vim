@@ -4,8 +4,8 @@
 " Included plugins
 runtime! ftplugin/man.vim " man pages
 
-let g:vimroot=expand($HOME . "/.vim")
 let g:plug_dir=expand(g:vimroot . "/plugged")
+let g:ale_emit_conflict_warnings = 0
 
 " External plugins
 call plug#begin(g:plug_dir)
@@ -38,6 +38,7 @@ Plug 'itchyny/lightline.vim' | Plug 'w0rp/ale'  " visual line (requires syntasti
 "Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
 " Plug 'jiangmiao/auto-pairs'
+"
 
 " Languages
 Plug 'dpwright/vim-tup'
@@ -54,7 +55,7 @@ Plug 'chrisbra/vim-diff-enhanced'   " pretty vim -d (diff)
 "Plug 'csexton/jekyll.vim'
 
 " Tools
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }   " open filesystem browser (on demand loading) 
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }   " open filesystem browser (on demand loading)
 Plug 'jistr/vim-nerdtree-tabs', { 'on':  'NERDTreeTabsToggle' }
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }    " display list of functions, variables etc.
 Plug 'gregsexton/gitv'
@@ -70,12 +71,18 @@ Plug 'embear/vim-localvimrc'      " search and local vimrc files ('lvimrc') in t
 Plug 'nathanaelkane/vim-indent-guides'  " show guides at indent stops
 Plug 'Raimondi/delimitMate'       " auto-completion for quotes, parentheses etc.
 
+" language-specific
+"
 if !(has('win32') || has ('win64'))
   " cscope only for Linux / Mac
   Plug 'brookhong/cscope.vim'
 endif
 
-" language-specific
+Plug 'fsharp/vim-fsharp', {
+     \ 'for': 'fsharp',
+     \ 'do':  'make fsautocomplete',
+     \}
+
 Plug 'editorconfig/editorconfig-vim', { 'for': 'javascript' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'maksimr/vim-jsbeautify', { 'for': 'javascript' }
@@ -97,7 +104,7 @@ Plug 'tomlion/vim-solidity'
 " Plug 'tpope/vim-classpath', { 'for': 'java' }
 
 " Load colorschemes
-let colorschemes=expand(g:vimroot . "/colorschemes")
+let colorschemes=expand($VIMHOME . "/colorschemes")
 Plug colorschemes
 
 call plug#end()

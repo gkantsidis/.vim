@@ -196,6 +196,17 @@ let g:ale_cpp_gcc_options = '-std=c++14 -Wall'
 let g:ale_cpp_clang_options = '-std=c++14 -Wall'
 
 "
+" ======= Syntastic
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " ======= Lightline
 "
 set laststatus=2

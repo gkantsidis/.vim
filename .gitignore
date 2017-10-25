@@ -6,4 +6,4 @@ plugged
 autoload/plug.vim.old
 .viminfo
 localcommands.vim
-config/vimrc.user
+config/user.vim

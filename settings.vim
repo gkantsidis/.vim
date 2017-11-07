@@ -1,7 +1,7 @@
 " APPEARANCE
 syntax enable
 set background=dark
-colorscheme blackbeauty
+colorscheme murphy
 set laststatus=2    " always show statusline
 set ruler           " always show cursor position
 set showmode        " display curent mode

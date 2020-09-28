@@ -2,7 +2,7 @@ autocmd FileType mkd.markdown normal zR
 autocmd FileType mkd normal zR
 
 au BufRead,BufNewFile *.thor setfiletype ruby
-au BufReadPost * :DetectIndent 
+au BufReadPost * :DetectIndent
 
 " restores cursor position on open
 function! ResCur()

@@ -4,6 +4,9 @@ This is my good old Vim setup, that has evolved over the years. I don't usually 
 TO INSTALL:
 
 Clone repo to ~/.vim (fork first if you'd like), then run `vim +PlugInstall +qa`.
+If the above fails to initialize (i.e. you start vim, and you get errors), then
+start vim and give the following commands: `:source vimrc` followed by
+`:PlugInstall`.
 
 FEATURES
 

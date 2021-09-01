@@ -6,6 +6,7 @@ runtime! ftplugin/man.vim " man pages
 
 let g:plug_dir=expand(g:vimroot . "/plugged")
 let g:ale_emit_conflict_warnings = 0
+let g:snipMate = { 'snippet_version' : 1 }
 
 " External plugins
 call plug#begin(g:plug_dir)

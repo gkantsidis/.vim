@@ -38,5 +38,6 @@ endif
 let user_config = expand($VIMHOME . "/config/user.vim")
 execute "source ".fnameescape(user_config)
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
 

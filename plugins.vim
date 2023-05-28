@@ -11,18 +11,16 @@ let g:snipMate = { 'snippet_version' : 1 }
 " External plugins
 call plug#begin(g:plug_dir)
 
-" UI
-Plug 'nanotech/jellybeans.vim'
-Plug 'bling/vim-airline'
-Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/syntastic'
+" Syntax colors
+Plug 'sainnhe/everforest'
+
+Plug 'bling/vim-bufferline'
+Plug 'tpope/vim-fugitive'
+" Plug 'rbong/vim-flog'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
-Plug 'jaxbot/semantic-highlight.vim'
-Plug 'tpope/vim-vinegar'
-"Plug 'altercation/vim-colors-solarized'
-
-" Workflow
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bling/vim-airline'
 Plug 'ciaranm/detectindent'
 Plug 'airblade/vim-rooter'          " change working directory to project root
 Plug 'AndrewRadev/splitjoin.vim'
@@ -61,7 +59,6 @@ Plug 'jistr/vim-nerdtree-tabs', { 'on':  'NERDTreeTabsToggle' }
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }    " display list of functions, variables etc.
 Plug 'gregsexton/gitv'
 Plug 'sjl/gundo.vim'
-"Plug 'taglist.vim'
 
 " Other
 Plug 'milkypostman/vim-togglelist'

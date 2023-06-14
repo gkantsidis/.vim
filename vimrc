@@ -43,6 +43,7 @@ execute "source ".fnameescape(user_config)
 " autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+if executable('opam')
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam var share")
 let s:opam_share_dir = substitute(s:opam_share_dir, '[\r\n]*$', '', '')
@@ -77,6 +78,7 @@ endfor
 " ## end of OPAM user-setup addition for vim / base ## keep this line
 " ## added by OPAM user-setup for vim / ocp-indent ## e5157983ad868c28bcffa9bff2e8c9e0 ## you can edit, but keep this line
 " ## end of OPAM user-setup addition for vim / ocp-indent ## keep this line
+endif
 
 " APPEARANCE
 syntax enable

@@ -42,7 +42,7 @@ Plug 'mattn/emmet-vim'
 " Languages
 Plug 'dpwright/vim-tup'
 Plug 'sheerun/vim-polyglot'
-Plug 'valloric/youcompleteme'
+" Plug 'valloric/youcompleteme'
 
 " Integration
 Plug 'tpope/vim-fugitive'           " git diff/blame functionality
